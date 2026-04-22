@@ -1,4 +1,4 @@
-package model;
+package Rubrica.src.model;
 
 
 import java.util.*;

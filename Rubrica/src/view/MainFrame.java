@@ -1,9 +1,9 @@
-package view;
+package Rubrica.src.view;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-import model.Persona;
-import model.Rubrica;
+import Rubrica.src.model.Persona;
+import Rubrica.src.model.Rubrica;
 
 import java.awt.*;
 
@@ -17,27 +17,31 @@ public class MainFrame extends JFrame {
         rubrica = new Rubrica();
         rubrica.carica();
 
-        // Esempio per cambiare colore di fondo ai bottoni
 
         setTitle("Rubrica");
         setSize(600, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        // rimuove riga direttamente editabile
         model = new DefaultTableModel(new String[]{"Nome", "Cognome", "Telefono"}, 0) {
             @Override
             public boolean isCellEditable(int row, int column) {
-            return false; // 🔴 disabilita modifica diretta
+            return false;
             }
         };
 
-				
-            
 
 
         table = new JTable(model);
         refreshTable();
 
         JButton btnNuovo = new JButton("Nuovo");
+
+        btnNuovo.setBackground(new Color(230, 230, 230));
+        btnNuovo.setForeground(Color.RED);
+        btnNuovo.setFont(new Font("SansSerif", Font.ITALIC, 12));
+
+
         JButton btnModifica = new JButton("Modifica");
         JButton btnElimina = new JButton("Elimina");
 

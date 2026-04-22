@@ -1,0 +1,1 @@
+jar cfm Rubrica.jar manifest.txt -C bin .

@@ -1,9 +1,10 @@
-package view;
+package Rubrica.src.view;
 import javax.swing.*;
-import java.awt.*;
 
-import model.Persona;
-import model.Rubrica;
+import Rubrica.src.model.Persona;
+import Rubrica.src.model.Rubrica;
+
+import java.awt.*;
 
 public class EditorPersona extends JFrame {
 
