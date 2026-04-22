@@ -1,0 +1,5 @@
+Mario;Rossi;Via Roma;123456789;24
+Mariolino;Rossi;Via rossi;123456789;44
+Salvatore;Maria;Via Rossi;123456789;44
+Salvatore;Rossi;Via Rossi;123456789;55
+Ciao;Come;Va;666666;66

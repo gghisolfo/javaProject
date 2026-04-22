@@ -1,5 +1,6 @@
 
 import javax.swing.SwingUtilities;
+
 import view.MainFrame;
 
 public class Main {
@@ -9,3 +10,5 @@ public class Main {
         });
     }
 }
+
+

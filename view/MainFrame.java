@@ -17,11 +17,23 @@ public class MainFrame extends JFrame {
         rubrica = new Rubrica();
         rubrica.carica();
 
+        // Esempio per cambiare colore di fondo ai bottoni
+
         setTitle("Rubrica");
         setSize(600, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        model = new DefaultTableModel(new String[]{"Nome", "Cognome", "Telefono"}, 0);
+        model = new DefaultTableModel(new String[]{"Nome", "Cognome", "Telefono"}, 0) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+            return false; // 🔴 disabilita modifica diretta
+            }
+        };
+
+				
+            
+
+
         table = new JTable(model);
         refreshTable();
 
@@ -29,21 +41,26 @@ public class MainFrame extends JFrame {
         JButton btnModifica = new JButton("Modifica");
         JButton btnElimina = new JButton("Elimina");
 
+ 
+        //NUOVO
         btnNuovo.addActionListener(e -> apriEditor(null, -1));
 
+
+        //MODIFICA
         btnModifica.addActionListener(e -> {
             int row = table.getSelectedRow();
             if (row == -1) {
-                JOptionPane.showMessageDialog(this, "Seleziona una persona");
+                JOptionPane.showMessageDialog(this, "Seleziona una persona"); //(JOptionPane.showMessageDialog(…
                 return;
             }
             apriEditor(rubrica.getPersone().get(row), row);
         });
 
+        //ELIMINA
         btnElimina.addActionListener(e -> {
             int row = table.getSelectedRow();
             if (row == -1) {
-                JOptionPane.showMessageDialog(this, "Seleziona una persona");
+                JOptionPane.showMessageDialog(this, "Seleziona una persona"); //(JOptionPane.showMessageDialog(…
                 return;
             }
 
@@ -66,6 +83,7 @@ public class MainFrame extends JFrame {
         add(panel, BorderLayout.SOUTH);
     }
 
+
     private void refreshTable() {
         model.setRowCount(0);
         for (Persona p : rubrica.getPersone()) {
@@ -74,7 +92,7 @@ public class MainFrame extends JFrame {
     }
 
     private void apriEditor(Persona p, int index) {
-        new EditorPersona(this, rubrica, p, index).setVisible(true);
+        new EditorPersona(this, rubrica, p, index).setVisible(true); //apri editorPersona
     }
 
     public void aggiorna() {
