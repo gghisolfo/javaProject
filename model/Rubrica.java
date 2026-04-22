@@ -28,7 +28,7 @@ public class Rubrica {
         salva();
     }
 
-    // Persistenza
+    // Persistenza prima
     public void salva() {
         try (PrintStream ps = new PrintStream(new File(FILE))) {
             for (Persona p : persone) {
@@ -39,6 +39,7 @@ public class Rubrica {
         }
     }
 
+    // Persistenza - dopo
     public void carica() {
         File file = new File(FILE);
         if (!file.exists()) return;
