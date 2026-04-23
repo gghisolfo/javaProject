@@ -1,9 +1,6 @@
 
 
-# 📕 README INTERNO (funzionalità)
-
-
-# ⚙️ Funzionalità – Progetto Rubrica
+# 📕⚙️ Funzionalità – Progetto Rubrica
 
 ## 📌 Descrizione funzionale
 L’applicazione rappresenta una **rubrica telefonica** che consente all’utente di gestire contatti tramite una **interfaccia grafica Java Swing**.
