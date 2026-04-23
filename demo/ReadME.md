@@ -1,10 +1,9 @@
----
+
 
 # 📕 README INTERNO (funzionalità)
 
 👉 **`src/README.md`**
 
-```md
 # ⚙️ Funzionalità – Progetto Rubrica
 
 ## 📌 Descrizione funzionale
@@ -101,4 +100,32 @@ Contiene:
 ## 💽 Persistenza dei dati
 
 ### File di salvataggio
-Percorso:
+Percorso: informatio.txt
+
+Formato:
+nome;cognome;indirizzo;telefono;eta
+
+Esempio:
+Steve;Jobs;via Cupertino 13;0612344;56
+
+Bill;Gates;via Redmond 10;06688989;60
+
+Babbo;Natale;via del Polo Nord;00000111;99
+
+
+
+---
+
+### 🔁 Avvio dell’applicazione
+- Se il file esiste:
+  - I dati vengono caricati automaticamente
+- Se il file non esiste:
+  - La rubrica parte vuota
+  - Nessun errore viene mostrato
+
+---
+
+### 🔄 Salvataggio automatico
+- Ad ogni salvataggio di una persona:
+  - Tutte le persone vengono scritte nel file
+  - I dati su file e tabella restano sincronizzati
