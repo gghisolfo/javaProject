@@ -17,23 +17,19 @@ L’obiettivo del progetto è gestire una lista di contatti permettendo:
 │
 ├──demo /
 |   ├── src/
-│     ├── model/
-│     ├── view/
-│     ├── controller/
-│     ├── Main.java
-│     └── README.md        ← README delle funzionalità
-│
-├── data/
-│   └── informazioni.txt
-│
+│     ├── main/
+│     |  ├── java/
+│     |  |  ├── view/
+│     |  |  |   ├── Main.java
+│     |  |  ├── model/
+|   └──  informazioni.txt
+│   └── README.md        ← README delle funzionalità
 ├── README.md            ← README principale (questo file)
-└── .gitignore
+
 
 ## 📂 Descrizione cartelle
 - **src/** → codice sorgente Java
 - **model/** → classi di dominio (es. `Persona`)
 - **view/** → interfaccia grafica Swing
-- **controller/** → logica dell’applicazione
-- **data/** → file di persistenza della rubrica
 
 📌 Per i **dettagli funzionali dell’applicazione**, consultare il file: src/README.md
