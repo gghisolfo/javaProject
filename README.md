@@ -15,12 +15,13 @@ L’obiettivo del progetto è gestire una lista di contatti permettendo:
 
 /ProgettoRubrica
 │
-├── src/
-│   ├── model/
-│   ├── view/
-│   ├── controller/
-│   ├── Main.java
-│   └── README.md        ← README delle funzionalità
+├──demo /
+|   ├── src/
+│     ├── model/
+│     ├── view/
+│     ├── controller/
+│     ├── Main.java
+│     └── README.md        ← README delle funzionalità
 │
 ├── data/
 │   └── informazioni.txt
