@@ -1,4 +1,4 @@
-package Rubrica.src.model;
+package model;
 
 
 public class Persona {
