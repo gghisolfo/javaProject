@@ -2,7 +2,6 @@
 
 # 📕 README INTERNO (funzionalità)
 
-👉 **`src/README.md`**
 
 # ⚙️ Funzionalità – Progetto Rubrica
 
